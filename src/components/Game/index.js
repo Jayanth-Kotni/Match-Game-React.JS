@@ -13,7 +13,6 @@ const Game = props => {
     onClickThumbnail,
   } = props
 
-  // functions
   const getImage = () =>
     allImagesList.find(image => image.id === currentImageId)
   const renderTabs = () => (
@@ -40,12 +39,12 @@ const Game = props => {
     </ul>
   )
 
-  // return code
-
   const {imageUrl} = getImage()
   return (
     <div className="game-container">
-      <img className="match-image" src={imageUrl} alt="match" />
+      <div className="image-container">
+        <img className="match-image" src={imageUrl} alt="match" />
+      </div>
       {renderTabs()}
       {renderThumbnails()}
     </div>
