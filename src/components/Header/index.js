@@ -21,7 +21,7 @@ const Header = props => {
             src="https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png"
             alt="timer"
           />
-          <p className="score-time">{timer} sec</p>
+          <span className="score-time">{timer} sec</span>
         </li>
       </ul>
     </nav>
